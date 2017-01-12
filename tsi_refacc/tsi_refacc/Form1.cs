@@ -16,5 +16,23 @@ namespace tsi_refacc
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+   
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Size desktopsize = System.Windows.Forms.SystemInformation.PrimaryMonitorSize;
+            Int32 alto = (desktopsize.Height - 296)/2;
+            Int32 ancho = (desktopsize.Width - 488)/2;
+            panel1.Location = new Point(ancho, alto);
+        }
     }
 }
